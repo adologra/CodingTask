@@ -1,0 +1,120 @@
+/* Color Palette */
+/* Typography */
+@font-face {
+  font-family: 'MetaProLight';
+  src: url("../fonts/MetaWebPro-Light.eot");
+  src: url("../fonts/MetaWebPro-Light.woff") format("woff"), url("../fonts/MetaCompPro-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-smooth: always;
+  text-shadow: none;
+  letter-spacing: 0.1px;
+  color: black;
+}
+
+.main-container {
+  background-color: #eee;
+}
+
+.header-Webapp .navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.footer-webapp {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  color: black;
+  padding: 25px;
+}
+.footer-webapp .copyright {
+  padding-top: 4px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smooth: always;
+  text-shadow: none;
+  letter-spacing: 0.1px;
+}
+
+.card-container {
+  hidden-display: none;
+}
+.card-container .card-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.card-container .card-wrapper .card-white {
+  background-color: #fff;
+}
+.card-container .card-wrapper .card-white .card-img {
+  width: 100%;
+}
+.card-container .card-wrapper .card-white .card-header {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card-container .card-wrapper .card-white .card-header .card-title {
+  padding-left: 10px;
+  text-align: left;
+}
+.card-container .card-wrapper .card-white .card-header .card-type {
+  border-radius: 15px;
+  text-align: right;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px 10px;
+  position: absolute;
+  right: 20px;
+}
+.card-container .card-wrapper .card-white .card-header .bg-red {
+  background-color: #FE2E2E;
+}
+.card-container .card-wrapper .card-white .card-header .bg-green {
+  background-color: #31B404;
+}
+.card-container .card-wrapper .card-white .card-header .bg-orange {
+  background-color: #DF7401;
+}
+.card-container .card-wrapper .card-white .card-body {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card-container .card-wrapper .card-white .card-link {
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.filter-wrapper {
+  text-align: left;
+  margin: 10px 10px;
+  padding: 10px;
+}
+.filter-wrapper .filter-type {
+  display: inline-block;
+  border-radius: 15px;
+  text-align: left;
+  background-color: green;
+  font-size: 10px;
+  padding: 2px 10px;
+}
+.filter-wrapper .bg-red {
+  background-color: #FE2E2E;
+}
+.filter-wrapper .bg-green {
+  background-color: #31B404;
+}
+.filter-wrapper .bg-orange {
+  background-color: #DF7401;
+}

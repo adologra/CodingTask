@@ -1,0 +1,26 @@
+{
+    "types":  { 
+        "Fruit": "red",
+        "Vegetable": "green",
+        "Meat": "orange"
+    },
+           
+    "filters": [
+        {
+            "name": "Fruit",
+            "type": "Fruit",
+            "color": "red"
+        },
+        {
+            "name": "Vegetable",
+            "type": "Vegetable",
+            "color": "green"
+        },
+        {
+            "name": "Meat",
+            "type": "Meat",
+            "color": "orange"
+        }
+    ]
+
+}

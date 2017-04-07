@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@import "partials/_vars";
+@import "partials/_images-path";
+@import "main/_global";
+
+//components
+@import "components/_header";
+@import "components/_footer";
+@import "components/_card";
+@import "components/_filter";

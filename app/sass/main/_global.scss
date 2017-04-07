@@ -1,0 +1,23 @@
+
+/* Typography */
+@font-face {
+    font-family: 'MetaProLight';
+    src: url('../fonts/MetaWebPro-Light.eot');
+    src: url('../fonts/MetaWebPro-Light.woff') format('woff'),
+         url('../fonts/MetaCompPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    position: absolute;
+    width:100%;
+    height:100%;
+    font-smooth: always;
+    text-shadow: none;
+    letter-spacing: 0.1px;
+    color: black;   
+}
+
+.main-container {
+    background-color: #eee;
+}

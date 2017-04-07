@@ -1,0 +1,32 @@
+.filter-wrapper {
+	
+	text-align: left;
+	margin: 10px 10px;
+	padding: 10px;	
+	
+
+
+	.filter-type {
+
+		display: inline-block;
+		border-radius: 15px;
+		text-align: left;
+		background-color: green;
+		font-size: 10px;
+		padding: 2px 10px;
+
+	}
+
+	.bg-red {
+		background-color: $red;
+	}
+
+	.bg-green {
+		background-color: $green;
+	}
+
+	.bg-orange {
+		background-color: $orange;
+	}
+
+}
