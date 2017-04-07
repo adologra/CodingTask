@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Coding-Task">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Coding Task Adolfo López</title>
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/vendor/jquery/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </head>
+    <body>
+      <div id="wrapper" class="main-container" >
+            <!-- Header Menu -->
+            <header class="header-Webapp">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">BrandName</a>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#">menu 1</a></li>
+                                <li><a href="#">menu 2</a></li>
+                                <li><a href="#">menu 3</a></li>
+                                <li><a href="#">menu 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="container-fluid bg-3 text-center"> 
+                <div class="filter-wrapper row">
+                    <div class="col-xs-12">
+                        <span>Filters:</span>
+                        <div class="filter-type bg-red" >
+                            <input type="checkbox" id="filterFruit" onClick="javascript:selectFilter(this)" name="cboxfilter" value="Fruit"/> 
+                            <label for="filterFruit">
+                                Fruit
+                            </label>
+                        </div>
+                        <div class="filter-type bg-green" >
+                            <input type="checkbox" id="filterVegetable" onClick="javascript:selectFilter(this)" name="cboxfilter" value="Vegetable"/> 
+                            <label for="filterVegetable">
+                                Vegetable
+                            </label>
+                        </div>
+                        <div class="filter-type bg-orange" >
+                            <input type="checkbox" id="filterMeat" onClick="javascript:selectFilter(this)" name="cboxfilter" value="Meat"/> 
+                            <label for="filterMeat">
+                                Meat
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container row" >
+                    <div class="card-wrapper col-xs-12 col-sm-6 col-md-3" data-type="Fruit">
+                        <div class="card-white">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <div class="card-header">
+                                <h3 class="card-title" >
+                                    Apple
+                                    <span class="card-type bg-red">Fruit</span>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis partuirent montes, nascetur ridiculus mus.
+                                </p>
+                                <a href="https://es.wikipedia.org/wiki/Apple" target="_blanck" class="card-link" >More details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper col-xs-12 col-sm-6 col-md-3" data-type="Vegetable">
+                        <div class="card-white">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <div class="card-header">
+                                <h3 class="card-title" >
+                                    Aubergine
+                                    <span class="card-type bg-green">Vegetable</span>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis partuirent montes, nascetur ridiculus mus.
+                                </p>
+                                <a href="https://es.wikipedia.org/wiki/Aubergine" target="_blanck" class="card-link" >More details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper col-xs-12 col-sm-6 col-md-3"  data-type="Fruit">
+                        <div class="card-white">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <div class="card-header">
+                                <h3 class="card-title" >
+                                    Banana
+                                    <span class="card-type bg-red">Fruit</span>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis partuirent montes, nascetur ridiculus mus.
+                                </p>
+                                <a href="https://es.wikipedia.org/wiki/Banana" target="_blanck" class="card-link" >More details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper col-xs-12 col-sm-6 col-md-3" data-type="Vegetable">
+                        <div class="card-white">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <div class="card-header">
+                                <h3 class="card-title" >
+                                    Broccoli
+                                    <span class="card-type bg-green">Vegetable</span>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis partuirent montes, nascetur ridiculus mus.
+                                </p>
+                                <a href="https://es.wikipedia.org/wiki/Broccoli" target="_blanck" class="card-link" >More details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper col-xs-12 col-sm-6 col-md-3" data-type="Meat">
+                        <div class="card-white">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <div class="card-header">
+                                <h3 class="card-title" >
+                                    Chicken
+                                    <span class="card-type bg-orange">Meat</span>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis partuirent montes, nascetur ridiculus mus.
+                                </p>
+                                <a href="https://es.wikipedia.org/wiki/Chicken" target="_blanck" class="card-link" >More details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper col-xs-12 col-sm-6 col-md-3" data-type="Fruit">
+                        <div class="card-white">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <div class="card-header">
+                                <h3 class="card-title" >
+                                    Orange
+                                    <span class="card-type bg-red">Fruit</span>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis partuirent montes, nascetur ridiculus mus.
+                                </p>
+                                <a href="https://es.wikipedia.org/wiki/Orange" target="_blanck" class="card-link" >More details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper col-xs-12 col-sm-6 col-md-3" data-type="Meat">
+                        <div class="card-white">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <div class="card-header">
+                                <h3 class="card-title" >
+                                    Beef
+                                    <span class="card-type bg-orange">Meat</span>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis partuirent montes, nascetur ridiculus mus.
+                                </p>
+                                <a href="https://es.wikipedia.org/wiki/Beef" target="_blanck" class="card-link" >More details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper col-xs-12 col-sm-6 col-md-3" data-type="Vegetable">
+                        <div class="card-white">
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <div class="card-header">
+                                <h3 class="card-title" >
+                                    Zucchini
+                                    <span class="card-type bg-green">Vegetable</span>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis partuirent montes, nascetur ridiculus mus.
+                                </p>
+                                <a href="https://es.wikipedia.org/wiki/Zucchini" target="_blanck" class="card-link" >More details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer class="footer-webapp">
+                <div class="container-fluid">
+                  <div class="container">
+                    <div class="content">
+                        <div class="row">                
+                            <div class="col-xs-12">
+                                <p class="copyright">Copyright 2017</p> 
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </footer>
+          <!-- -->
+        </div>        
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<div class="card-wrapper col-xs-12 col-sm-6 col-md-3">
+	<img ng-src="{{card.image}}" class="img-responsive" style="width:100%" alt="Image">
+	<div class="card-header">
+		<h3 class="card-title" >
+			{{card.title}}
+			<span class="card-type bg-{{card.color}}" >{{card.type}}</span>
+		</h3>
+	</div>
+	<div class="card-body">
+		<p>{{card.description}}</p>
+		<a ng-href="{{card.link}}{{card.title}}" target="_blanck" class="card-link" >More details</a>
+	</div>
+</div>

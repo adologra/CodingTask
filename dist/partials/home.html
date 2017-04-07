@@ -1,0 +1,12 @@
+<div class="jumbotron container-fluid bg-3 text-center" ng-controller="HomeCtrl"> 
+  <div class="filter-wrapper row">
+  	<span>Filters:</span>
+    <filters-component 
+    	ng-repeat="filter in filters" 
+    	filter="filter"
+    	on-click="activateFilter"></filters-component>
+  </div>
+  <div class="row">
+    <card-component ng-repeat="card in cards |filter:{type : selectedFilter} " card="card"></card-component>
+  </div>
+</div>
