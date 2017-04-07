@@ -2,7 +2,7 @@
 
 Technologies:
 * Bootstrap3
-* AngularJS 1.5
+* Javascript
 * HTML5
 * CSS3
 
